@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Página Inicial 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="{{noticia.img}}">
+    <ion-card-header>
+      <ion-card-subtitle>{{noticia.data}}</ion-card-subtitle>
+      <ion-card-title>{{noticia.titulo}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{noticia.resumo}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

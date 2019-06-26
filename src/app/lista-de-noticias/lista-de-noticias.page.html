@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ListaDeNoticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let n of noticias">
+        <img src="{{n.img}}">
+        <ion-card-header>
+          <ion-card-subtitle>{{n.data}}</ion-card-subtitle>
+          <ion-card-title>{{n.titulo}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{n.resumo}}
+        </ion-card-content>
+      </ion-card>
+</ion-content>

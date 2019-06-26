@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Filmes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let f of filmes">
+        <img src="{{f.imagem}}">
+        <ion-card-header>
+          <ion-card-title>{{f.nomeFilme}}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+</ion-content>
